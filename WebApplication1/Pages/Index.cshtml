@@ -1,10 +1,234 @@
-﻿@page
-@model IndexModel
+﻿@page 
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="hero-badge"><span class="dot"></span> M18 &nbsp;·&nbsp; Zambia</div>
+      <h1>A warm welcome, <em>right along the M18.</em></h1>
+      <p class="lede">Golden Emerald Guest House is a secure, comfortable place to rest — whether you're passing through or staying a while. Simple hospitality, done properly.</p>
+      <div class="btn-row">
+        <a href="#contact" class="btn btn-gold">Book your stay</a>
+        <a href="#rooms" class="btn btn-outline">View rooms</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 340 Q 100 300 200 335 T 400 320 V500 H0 Z" fill="#123A28"/>
+        <path d="M0 380 Q 120 350 220 380 T 400 365 V500 H0 Z" fill="#0F2E20"/>
+        <circle cx="310" cy="90" r="46" fill="#D6A419" opacity="0.9"/>
+        <g stroke="#F3DFA0" stroke-width="2" opacity="0.5">
+          <line x1="60" y1="60" x2="60" y2="500"/>
+          <line x1="90" y1="40" x2="90" y2="500"/>
+        </g>
+        <rect x="130" y="250" width="150" height="120" rx="6" fill="#DCEDE3" opacity="0.12"/>
+        <rect x="130" y="250" width="150" height="120" rx="6" fill="none" stroke="#F3DFA0" stroke-width="2"/>
+        <path d="M120 250 L205 195 L290 250 Z" fill="#F3DFA0" opacity="0.9"/>
+        <rect x="185" y="300" width="40" height="70" fill="#0F2E20" stroke="#F3DFA0" stroke-width="2"/>
+        <rect x="150" y="270" width="24" height="24" fill="none" stroke="#F3DFA0" stroke-width="2"/>
+        <rect x="236" y="270" width="24" height="24" fill="none" stroke="#F3DFA0" stroke-width="2"/>
+        <text x="200" y="440" text-anchor="middle" fill="#F3DFA0" font-family="DM Mono, monospace" font-size="11" letter-spacing="2">PHOTO OF GUEST HOUSE — ADD YOUR OWN</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="road-rail"></div>
+  <div class="wrap">
+    <div class="about-grid reveal">
+      <div class="photo" style="aspect-ratio:5/4;">
+        <svg viewBox="0 0 100 80" fill="none" stroke="#1F6F4C" stroke-width="1.6"><path d="M10 45 L50 15 L90 45"/><rect x="20" y="45" width="60" height="30"/><rect x="42" y="55" width="16" height="20"/><rect x="26" y="52" width="10" height="10"/><rect x="64" y="52" width="10" height="10"/></svg>
+        <span class="photo-label">Front view — add photo</span>
+      </div>
+      <div class="about-copy">
+        <div class="waypoint"><span class="shield">M18</span></div>
+        <span class="eyebrow">About the guest house</span>
+        <h2>A quiet, secure stop between destinations.</h2>
+        <p>Golden Emerald Guest House sits along the M18, offering clean rooms, a gated compound, and a genuinely friendly welcome. Whether you're a traveller on the road or visiting family nearby, we aim to make your stay easy and comfortable.</p>
+        <p>Family-run, close to local transport routes, and built around one idea: guests should leave feeling looked after.</p>
+        <div class="about-stats">
+          <div><div class="num">24/7</div><div class="lbl">Gated security</div></div>
+          <div><div class="num">M18</div><div class="lbl">On the main road</div></div>
+          <div><div class="num">3+</div><div class="lbl">Room types</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rooms">
+  <div class="road-rail"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="waypoint"><span class="shield">M18</span></div>
+      <span class="eyebrow">Where you'll sleep</span>
+      <h2>Rooms &amp; rates</h2>
+      <p>A room for every kind of stay — from a single night on the road to a longer visit. Contact us for current rates.</p>
+    </div>
+    <div class="room-grid reveal">
+      <div class="room-card">
+        <div class="photo"><svg viewBox="0 0 100 80" fill="none" stroke="#1F6F4C" stroke-width="1.6"><rect x="15" y="35" width="70" height="30"/><rect x="20" y="20" width="25" height="15"/><line x1="15" y1="65" x2="15" y2="72"/><line x1="85" y1="65" x2="85" y2="72"/></svg><span class="photo-label">Standard Room</span></div>
+        <div class="room-body">
+          <h3>Standard Room</h3>
+          <div class="rate">Contact for rates</div>
+          <p>Comfortable single or double bed, en-suite bathroom, and everything you need for a straightforward, restful night.</p>
+          <a href="#contact">Enquire →</a>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="photo"><svg viewBox="0 0 100 80" fill="none" stroke="#1F6F4C" stroke-width="1.6"><rect x="12" y="35" width="76" height="30"/><rect x="18" y="20" width="20" height="15"/><rect x="62" y="20" width="20" height="15"/><line x1="12" y1="65" x2="12" y2="72"/><line x1="88" y1="65" x2="88" y2="72"/></svg><span class="photo-label">Family Room</span></div>
+        <div class="room-body">
+          <h3>Family Room</h3>
+          <div class="rate">Contact for rates</div>
+          <p>Extra space with room for the whole family, plus a private bathroom and a quiet corner of the compound.</p>
+          <a href="#contact">Enquire →</a>
+        </div>
+      </div>
+      <div class="room-card">
+        <div class="photo"><svg viewBox="0 0 100 80" fill="none" stroke="#1F6F4C" stroke-width="1.6"><rect x="10" y="30" width="80" height="35"/><rect x="16" y="18" width="30" height="12"/><circle cx="72" cy="45" r="6"/><line x1="10" y1="65" x2="10" y2="73"/><line x1="90" y1="65" x2="90" y2="73"/></svg><span class="photo-label">Executive Room</span></div>
+        <div class="room-body">
+          <h3>Executive Room</h3>
+          <div class="rate">Contact for rates</div>
+          <p>The largest room, with extra comfort and privacy — a good choice for longer stays or business travel.</p>
+          <a href="#contact">Enquire →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="amenities" class="amenities-band">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="waypoint"><span class="shield">M18</span></div>
+      <span class="eyebrow">What's included</span>
+      <h2>Amenities</h2>
+      <p style="color:rgba(255,255,255,0.7);">Everything that makes a stay easier, included as standard.</p>
+    </div>
+    <div class="amen-grid reveal">
+      <div class="amen-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg><h4>Gated compound</h4><p>Secure parking, watched around the clock.</p></div>
+      <div class="amen-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8.5a16 16 0 0120 0M5 12a11 11 0 0114 0M8.5 15.5a6 6 0 017 0"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg><h4>Wi-Fi access</h4><p>Stay connected throughout your visit.</p></div>
+      <div class="amen-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3v7a6 6 0 0012 0V3M6 3h12M12 21v-4"/></svg><h4>Hot water</h4><p>Reliable hot showers, day or night.</p></div>
+      <div class="amen-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V9l8-5 8 5v10M4 19h16M9 19v-6h6v6"/></svg><h4>On-site parking</h4><p>Space right at the door for cars and trucks.</p></div>
+      <div class="amen-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 21V8l8-5 8 5v13M9 21v-7h6v7"/><path d="M12 12h.01"/></svg><h4>Restaurant &amp; bar</h4><p>Simple, hearty meals and cold drinks.</p></div>
+      <div class="amen-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 21h10M9 4V2M15 4V2"/></svg><h4>Laundry service</h4><p>Fresh clothes, ready when you need them.</p></div>
+      <div class="amen-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg><h4>Flexible check-in</h4><p>Arriving late from the road? We'll be ready.</p></div>
+      <div class="amen-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l3 5 6 1-4.5 4 1 6-5.5-3-5.5 3 1-6L3 8l6-1z"/></svg><h4>Friendly staff</h4><p>Local knowledge and a genuine welcome.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="road-rail"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="waypoint"><span class="shield">M18</span></div>
+      <span class="eyebrow">A look inside</span>
+      <h2>Gallery</h2>
+      <p>Placeholder gallery — swap these in for real photos of the rooms, compound, and surroundings.</p>
+    </div>
+    <div class="gallery-grid reveal">
+      <div class="photo"><svg viewBox="0 0 60 60" fill="none" stroke="#1F6F4C" stroke-width="1.4"><rect x="8" y="10" width="44" height="40"/><circle cx="20" cy="22" r="4"/><path d="M8 42l14-14 10 10 8-8 12 12"/></svg></div>
+      <div class="photo"><svg viewBox="0 0 60 60" fill="none" stroke="#1F6F4C" stroke-width="1.4"><rect x="14" y="18" width="32" height="24"/><rect x="24" y="30" width="12" height="12"/></svg></div>
+      <div class="photo"><svg viewBox="0 0 60 60" fill="none" stroke="#1F6F4C" stroke-width="1.4"><path d="M10 45c8-20 32-20 40 0" /><circle cx="30" cy="20" r="6"/></svg></div>
+      <div class="photo"><svg viewBox="0 0 60 60" fill="none" stroke="#1F6F4C" stroke-width="1.4"><rect x="12" y="12" width="36" height="36" rx="4"/><path d="M12 34l10-10 8 8 10-10 8 8"/></svg></div>
+      <div class="photo"><svg viewBox="0 0 60 60" fill="none" stroke="#1F6F4C" stroke-width="1.4"><rect x="18" y="15" width="24" height="30" rx="2"/><line x1="18" y1="25" x2="42" y2="25"/></svg></div>
+      <div class="photo"><svg viewBox="0 0 60 60" fill="none" stroke="#1F6F4C" stroke-width="1.4"><rect x="8" y="20" width="44" height="24"/><path d="M8 20l22-10 22 10"/></svg></div>
+      <div class="photo"><svg viewBox="0 0 60 60" fill="none" stroke="#1F6F4C" stroke-width="1.4"><circle cx="30" cy="30" r="16"/><path d="M30 14v32M14 30h32" stroke-width="0.8"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="road-rail"></div>
+  <div class="wrap">
+    <div class="loc-grid reveal">
+      <div>
+        <div class="waypoint"><span class="shield">M18</span></div>
+        <span class="eyebrow">Find us</span>
+        <h2 style="font-size:clamp(1.7rem,3vw,2.3rem);margin:10px 0 22px;">Right on the M18</h2>
+        <div class="addr-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-7.5 7-12a7 7 0 10-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <div><h4>Address</h4><p>M18, Zambia</p></div>
+        </div>
+        <div class="addr-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V9l8-5 8 5v10M4 19h16M9 19v-6h6v6"/></svg>
+          <div><h4>Easy to spot</h4><p>Look for the Golden Emerald sign right along the road — hard to miss on the way through.</p></div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Golden+Emerald+Guest+House+Zambia" target="_blank" rel="noopener" class="btn btn-clay" style="margin-top:10px;">Get directions</a>
+      </div>
+      <div class="map-card">
+        <svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="320" fill="#E7F0E5"/>
+          <path d="M-20 150 C 100 110, 180 190, 300 140 S 420 100 440 130" stroke="#8FA894" stroke-width="26" fill="none"/>
+          <path d="M-20 150 C 100 110, 180 190, 300 140 S 420 100 440 130" stroke="#F3EBD8" stroke-width="2" stroke-dasharray="10 8" fill="none"/>
+          <g transform="translate(150,90)"><rect width="46" height="30" rx="4" fill="#1F6F4C" stroke="#0F2E20" stroke-width="2"/><text x="23" y="20" text-anchor="middle" fill="#fff" font-family="DM Mono, monospace" font-size="12">M18</text></g>
+          <g transform="translate(310,175)"><rect width="46" height="30" rx="4" fill="#1F6F4C" stroke="#0F2E20" stroke-width="2"/><text x="23" y="20" text-anchor="middle" fill="#fff" font-family="DM Mono, monospace" font-size="12">M18</text></g>
+          <g transform="translate(195,120)">
+            <path d="M0 0 C -14 0 -22 12 -14 24 L0 46 L14 24 C22 12 14 0 0 0 Z" fill="#B6531F" stroke="#fff" stroke-width="2"/>
+            <circle cx="0" cy="13" r="5" fill="#fff"/>
+          </g>
+          <text x="200" y="290" text-anchor="middle" fill="#5B6459" font-family="DM Mono, monospace" font-size="11" letter-spacing="1.5">ILLUSTRATIVE MAP — LINK BELOW OPENS GOOGLE MAPS</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="road-rail"></div>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="waypoint"><span class="shield">M18</span></div>
+      <span class="eyebrow">Guests say</span>
+      <h2>What people notice</h2>
+      <p>Placeholder quotes — swap in real guest feedback once you start collecting it.</p>
+    </div>
+    <div class="review-grid reveal">
+      <div class="review-card">
+        <div class="stars">★★★★☆</div>
+        <p>"Easy to find right on the road, and the gate made me feel safe leaving my car overnight."</p>
+        <div class="who">— Placeholder guest</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Simple, clean, and the staff were genuinely helpful when I arrived late."</p>
+        <div class="who">— Placeholder guest</div>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★☆</div>
+        <p>"A good, no-fuss stop between towns. Would stay again."</p>
+        <div class="who">— Placeholder guest</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <div class="waypoint"><span class="shield" style="background:var(--gold);color:var(--emerald-deep);outline-color:#7a3c15;">M18</span></div>
+        <h2>Ready when you are.</h2>
+        <p>Call, message, or send an enquiry — we'll help you find the right room for your stay.</p>
+      </div>
+      <div class="contact-list">
+        <a class="contact-item" href="tel:+260000000000">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.1-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8.1 9.7a16 16 0 006.2 6.2l1.2-1.2a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"/></svg>
+          <span><span class="l1">+260 00 000 0000</span><br><span class="l2">Tap to call — add your number</span></span>
+        </a>
+        <a class="contact-item" href="https://wa.me/260000000000" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.4 8.4 0 01-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+          <span><span class="l1">WhatsApp</span><br><span class="l2">Fastest way to reach us</span></span>
+        </a>
+        <a class="contact-item" href="mailto:hello@goldenemerald.example">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg>
+          <span><span class="l1">hello@goldenemerald.example</span><br><span class="l2">Replace with your real email</span></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
