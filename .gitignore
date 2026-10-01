@@ -1,4 +1,25 @@
-WebApplication1/bin/
-WebApplication1/obj/
+# Build output
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+TestResults/
+
+# IDE and editor files
 .vs/
+.vscode/
+.idea/
 *.user
+*.suo
+*.rsuser
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local environment
+.env
+.env.local
