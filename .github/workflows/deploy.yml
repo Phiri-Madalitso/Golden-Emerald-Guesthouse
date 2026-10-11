@@ -21,7 +21,7 @@ jobs:
         with:
           dotnet-version: 10.0.x
       - name: Build static site
-        run: tools/build-static.sh
+        run: bash tools/build-static.sh
         env:
           SITE_URL: ${{ vars.SITE_URL }}
           CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
