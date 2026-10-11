@@ -1763,3 +1763,30 @@ ul.links a.active {
     font-size: 0.78rem;
     color: var(--ink-soft);
 }
+
+/* ---- Wide screens: keep the photo at a size where it stays sharp ---- */
+@media (min-width:1000px) {
+    .hero {
+        background: radial-gradient(900px 500px at 20% 110%, rgba(201,162,46,0.12), transparent 60%), var(--emerald-deep);
+    }
+
+    .hero-slides {
+        left: auto;
+        right: 0;
+        width: min(56vw, 1100px);
+        -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 28%);
+        mask-image: linear-gradient(90deg, transparent 0%, #000 28%);
+    }
+
+    .hero-slide.active {
+        animation-name: kenburnsSoft;
+    }
+
+    .hero-overlay {
+        display: none;
+    }
+}
+
+@keyframes kenburnsSoft {
+    to { transform: scale(1.03); }
+}
