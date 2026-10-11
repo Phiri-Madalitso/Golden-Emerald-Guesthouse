@@ -1,5 +1,5 @@
 ﻿@{
-    var pageTitle = ViewData["Title"] != null ? ViewData["Title"] + " — Golden Emerald Guest House" : "Golden Emerald Guest House — Your Stop Along the M18";
+    var pageTitle = ViewData["Title"] != null ? ViewData["Title"] + " | Golden Emerald Guest House" : "Golden Emerald Guest House | Your Stop Along the M18";
 }
 <!DOCTYPE html>
 <html lang="en">
@@ -7,7 +7,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@pageTitle</title>
-    <meta name="description" content="Golden Emerald Guest House — comfortable, secure lodging along the M18, Zambia." />
+    <meta name="description" content="Golden Emerald Guest House | comfortable, secure lodging along the M18, Zambia." />
+    <meta name="theme-color" content="#0F2E20" />
+    <meta property="og:title" content="Golden Emerald Guest House" />
+    <meta property="og:description" content="Comfortable, secure lodging along the M18, Zambia." />
+    <link rel="icon" type="image/svg+xml" href="~/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=DM+Mono:wght@500&display=swap" rel="stylesheet" />
@@ -17,7 +21,7 @@
     <header>
         <div class="nav">
             <a href="~/" class="brand" aria-label="Golden Emerald Guest House">
-                <img src="~/images/logo.png" asp-append-version="true" alt="" class="brand-logo" />
+                <img src="~/images/logo.svg" alt="" class="brand-logo" width="44" height="44" />
                 <span class="brand-text">
                     <span class="brand-name">Golden Emerald</span>
                     <span class="brand-sub">Guest House</span>
@@ -31,7 +35,7 @@
                 <li><a href="#location">Location</a></li>
             </ul>
             <a href="#contact" class="nav-cta">Book now</a>
-            <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span><span></span></button>
+            <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false"><span></span><span></span><span></span></button>
         </div>
     </header>
 
@@ -42,12 +46,17 @@
     <footer>
         <div class="wrap footer-row">
             <a href="~/" class="brand">
-                <span class="brand-mark">GE</span>
+                <img src="~/images/logo.svg" alt="" class="brand-logo footer-logo" width="36" height="36" />
                 <span class="brand-name">Golden Emerald Guest House</span>
             </a>
-            <p>M18, Zambia · © <span id="year"></span> Golden Emerald Guest House</p>
+            <p>M18, Zambia. © <span id="year"></span> Golden Emerald Guest House</p>
         </div>
     </footer>
+
+    <nav class="mobile-bar" aria-label="Quick contact">
+        <a class="call" href="tel:+260762512858">Call</a>
+        <a class="wa" href="https://wa.me/260762512858" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
